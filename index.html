@@ -83,10 +83,75 @@
     <img id="arrows" src="pictures/arrow.png" alt="">
 <p id="headingseconddiv">Here's what our customer <br>
     has to says</p>
+    <button id="customersstories">Read Customers Stories</button>
+    <img id="description" src="pictures/description.png" alt="">
+        <!-- <img id="cardtestimonial" src="pictures/testimonial.png" alt=""> -->
+    <div id="cardtestimonial">
+        <!-- <p id="cardheading">Amazing tool! Saved me months</p>
+        <p id="cardpara">This is a placeholder for your testimonials and what your client has to <br>
+             say, put them here and make sure its 100% true and meaningful.</p>
+             <img src="pictures/profile.png" alt=""> -->
+    </div>
+    
+
 </div>
 </div>
+<div class="thirddiv">
+ <div class="row">
+    <img src="pictures/icons.png" alt="">
+    <img id="centertxt" src="pictures/Frame 53.png" alt="">
+    <img id="toggle1" src="pictures/toggle.png" alt="">
+    
+ </div>
+ <div class="imgsthirddiv">
+<img id="thirddivimg" src="pictures/apps (auto change transition).png" alt="">
+<img id="thirddivimg1" src="pictures/apps (auto change transition) (1).png" alt="">
+<img id="headingdescriptionimg" src="pictures/heading - description.png" alt="">
+<button id="btndemo">Get a Free Demo</button>
+<img id="caption1" src="pictures/caption1.png" alt="">
+<img id="cc" src="pictures/cc.png" alt="">
+<img id="desktop1" src="pictures/Desktop - 1.png" alt="">
+ </div>
     </div>
     </div>
-   
+    </div>
+   <script>
+let headings = [
+    'Amazing tool! Saved me months',
+    'Amazing tool! Saved me months 2',
+    'Amazing tool! Saved me months 3',
+    'Amazing tool! Saved me months 4'];
+
+let paragraph = [
+    'This is a placeholder for your testimonials and what your client has to say, put them here and make sure its 100% true and meaningful.',
+    'This is a placeholder for your testimonials and what your client has to say, put them here and make sure its 100% true and meaningful. 2',
+    'This is a placeholder for your testimonials and what your client has to say, put them here and make sure its 100% true and meaningful. 3',
+    'This is a placeholder for your testimonials and what your client has to say, put them here and make sure its 100% true and meaningful. 4'];
+
+let main = document.getElementById("cardtestimonial");
+let col = "";
+for (let i = 0; i < 4; i++) {
+    col += `<div class="col">
+    <h3>${headings[i]}</h3>
+    <p>${paragraph[i]}</p>
+    <div class="info">
+        <img src="images/avatar.png" alt="">
+        <div class="info-text">
+            <p>John Master</p>
+            <p>Director,  UiFry.com</p>
+        </div>
+    </div>
+</div>`
+}
+main.innerHTML = col;
+   </script>
+
+   <!-- <script>
+    let main=document.getElementById("cardtestimonial")
+    for(let i=0;i<4;i++){
+       document.getElementById("cardheading")
+       document.getElementById("cardpara")
+    }
+   </script> -->
 </body>
 </html>
